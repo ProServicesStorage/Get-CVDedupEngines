@@ -4,9 +4,12 @@ This Powershell script creates an html report across multiple CommCells that hig
  
 To run, create a directory called D:\CVPS_Scripts. The directory can be modified by changing the input variable for the function CreateBaseFolders. Create a text file called commcells.txt with one commcell per line. The commcell should be specified as the CommServe SQL database Instance which may reflect a different name than the commcell name. The script utilizes the logged in user's credentials. We ran with the script logged in as local admin and SQL sysadmin, however, it certainly may be possible to utilize reduced SQL privileges. 
  
-commcells.txt ex. 
+commcells.txt ex.
+
 CommServe1\Commvault
+
 CommServe2\Commvault
+
 CommServe3\Commvault
  
 The script creates a subdirectory called reports which contains the report output. Each report is timestamped and thus unique. In addition, a log subdirectory is created to output any sqlcmd errors.
